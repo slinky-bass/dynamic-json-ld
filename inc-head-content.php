@@ -14,26 +14,6 @@
 <![endif]-->
 
 <!-- 
-IMAGE RESIZER SCRIPT
-The code doesn't work in IE6 or less, so I suggest the following
-conditionally-commented code in your <head> be used to implement the
-JavaScript on your RWD website
--->
-
-<!--[if ! lte IE 6]><!-->
-<script type="text/javascript" src="javascript/imgsizer.js"></script>
-<script type="text/javascript">
-addLoadEvent(function() {
-if (document.getElementById && document.getElementsByTagName) {
-var aImgs =
-document.getElementById("content").getElementsByTagName("img");
-imgSizer.collate(aImgs);
-}
-});
-</script>
-<!--<![endif]-->
-
-<!-- 
 The following script allows all browsers to support media queries in CSS.
 -->
 
@@ -44,4 +24,4 @@ The following script allows all browsers to support media queries in CSS.
 <script type="text/javascript" src="jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="jquery/accordion.js"></script>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
-<link href="stylesheets/public.css" rel="stylesheet" type="text/css">
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
