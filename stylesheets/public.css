@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+@import url("html_css_reset.css");
+
+html, body {height: 100%;}
+body {
+	margin: 0;
+	background-color: #efefef;
+	}
+
+html {overflow-y: scroll;}
+
+img {
+max-width: 100%;
+border-style: none;
+}
+
+*img {
+width: 100%;
+border-style: none;
+}
+	
+p {
+	margin: 0;
+	pading: 0;
+	}
+
+article {
+	padding: 2%;
+	}
+
+ul {
+	list-style: none;
+	}
+	
+ul li {
+	padding: 2%;
+	}
+	
+a {
+	color: #efefef;
+	text-decoration: none;
+	}
+
+.ref {
+	color: #000;
+	text-decoration: none;
+	}	
+	
+.ref:hover {
+	text-decoration: underline;
+	}
+	
+ol {
+	padding: 2% 0 2% 3%;
+	}
+	
+ol li {
+	padding: 1% 2% 1% 0;
+	line-height: 1.2em;
+	}
+	
+ol li a {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #26466F;
+	}
+	
+h4 {
+	color: #26466F;
+	}
+	
+pre {
+      width: 80%;
+      margin: 0 auto;
+      padding: 2%;
+	  line-height: 1.4em;
+      background-color: #e6e6e8;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word; 
+	  }
+	  
+.margin {
+	margin: 2% auto;
+	}	  
+	
+/********************** MISC CLASSES START ***********************/
+.clear_float {
+	clear: both;
+	font-size: 0px;
+	line-height: 0px;
+	}
+
+.float-l {
+	display: inline-block;
+	float: left;
+	}
+	
+.float-r {
+	display: inline-block;
+	float: right;
+	}
+
+/*********************** MISC CLASSES END ************************/
+	
+/********************* MOBILE HEADER START ***********************/
+
+ #header_container {
+		width: 100%;
+		margin: 0;
+		height: 100px;
+		padding: 2% 0;
+		background-color: #fff; 
+		background-image: url(../sources/logo-tekiah.png);
+		background-repeat: no-repeat; 
+		background-position: 5%, 12%;
+		}
+		
+/********************** MOBILE HEADER END *************************/
+	
+/*********************** MOBILE NAV START *************************/
+
+nav {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #26466F; /* navy blue*/
+	}
+	
+	li.single-li {
+		display: block;
+		border-bottom: #FFF 1px solid;
+		padding: 4%; 
+		cursor: pointer;
+		}	
+			
+		li.accordion_toggle {
+			display: block;
+			border-bottom: #FFF 1px solid;
+			padding: 4%; 
+			cursor: pointer;
+			}
+			
+		.accordion_content {
+			overflow: hidden; 
+			background: #C0C0C0 ;  /* #C78D08 tekiah yellow*/
+			cursor: pointer;
+			}
+			
+			.accordion_content li {
+				border-bottom: #FFF 1px solid;
+				padding: 4%;
+				}
+				
+				li a {
+					display: block;
+					}
+			
+		.current {
+			/*border-bottom: #003 3px solid;*/
+			}
+	
+/*********************** MOBILE NAV END *************************/
+
+/***************** MOBILE MAIN CONTENT START ********************/
+
+.signin_wrapper {
+	width: 30%;
+	height: auto;
+	margin: 5% auto;
+	padding: 1%;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #006699;
+	}
+
+#wrapper {
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+	min-width: 120px;
+	background-color: #efefef;
+	position: relative;
+	}
+	
+	#content_container {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		background-color: #fff;
+		}
+		
+		#content_container article {
+			margin: 0 auto 2% auto;
+			padding: 2%;
+			color: #333;
+			}
+			
+			#content_container article p {
+				margin: 1% auto;
+				padding: 1% 3%;
+				line-height: 1.4em;
+				}
+				
+			#content_container article figure {
+				width: 80%;
+				margin: 2% auto;
+				padding: 1%;
+				border: #CCC 1px solid;
+				text-align: center;
+				}
+				
+			.eg-wrapper {
+				width: 40%;
+				margin: 2% auto;
+				padding: 1%;
+				border: #CCC 1px solid;
+				text-align: center;
+				}
+			
+			.steps {
+				margin: 0;
+				padding: 1% auto;
+				}
+				
+				.steps li {
+					margin: 1% auto;
+					padding: 0;
+					}
+					
+					.steps li a {
+						display: inline;
+						color: #4dbdeb; 
+						}
+				
+				.heading {
+					margin: 1% auto 2% auto;
+					padding: 0;
+					text-align: center;
+					color: #4dbdeb; 
+					}
+					
+				.main-heading {
+					margin: 0 auto 2% auto;
+					padding: 2%;
+					text-align: center;
+					background-color: #4dbdeb;
+					color: #fff;
+					}
+							
+/****************** MOBILE MAIN CONTENT END ********************/
+
+/*###################### TABLET LAYOUT START 481px - 768px #########################*/
+@media only screen and (min-width: 481px) {
+/*##################################################################################*/	
+
+
+/********************* TABLET HEADER START **********************/
+
+#header_container {
+		
+		}
+		
+/********************* TABLET HEADER END ************************/
+
+/********************* TABLET NAV START *************************/
+
+nav {
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #26466F; /* navy blue*/
+	}
+	
+	nav ul {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		}
+	
+	.li-wrapper {
+		position: relative;
+		display: inline-block;
+		float: left;
+		width: 16.53%;
+		height: 38px;
+		border-right: #FFF 1px solid;
+		}
+		
+	.li-wrapper:nth-of-type(6) {
+		border-right: none;
+		}	
+		
+	li.single-li {
+		margin: 0 auto;
+		padding: 4% 0;
+		border-bottom: none;
+		}
+	
+	li {
+		width: 96%;
+		margin: 0;
+		border-bottom: none;
+		}	
+			
+	li.accordion_toggle {
+		display: inline-block;
+		margin: 0 auto;
+		border-bottom: none;
+		padding: 4% 2%;
+		cursor: pointer;
+		}
+		
+	li a {
+		display: block;
+		padding: 9% 2%;
+		}
+		
+	ul.accordion_content {
+		display: inline-block;
+		position: absolute;
+		top: 38px;
+		left: 0;
+		overflow: hidden; 
+		
+		cursor: pointer;
+		}
+		
+		.accordion_content li {
+			padding: 9% 2%;
+			}
+	
+		.current {
+			
+			}
+	
+/********************* TABLET NAV END ***********************/
+
+/**************** TABLET MAIN CONTENT START *****************/
+
+#wrapper {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #efefef;
+	}
+	
+	#content_container {
+	
+		}
+			
+/**************** TABLET MAIN CONTENT END *******************/
+
+/******************* TABLET FOOTER START ********************/
+	
+footer {
+	margin: 1% auto;
+	}
+		
+/******************* TABLET FOOTER END **********************/
+				
+}
+
+	
+/*###################### DESKTOP LAYOUT START 801px - 1232px #######################*/
+@media only screen and (min-width: 801px)  {
+/*##################################################################################*/	
+
+
+/********************* DESKTOP NAV START *********************/
+
+li a {
+		display: block;
+		padding: 4% 2%;
+		}
+		
+/********************** DESKTOP NAV END **********************/
+
+/****************** DESKTOP STRUCTURE START ******************/	
+#wrapper {
+	width: 94%;
+	height: auto;
+	margin: 0 auto;
+	
+	}
+	
+	#header_container {
+		margin: 0 auto;
+		}	
+
+	#content_container {
+		
+		}
+			
+/***************** DESKTOP MAIN CONTENT END ******************/
+}
+	
+	
+/*###################### WIDESCREEN LAYOUT START 1300px -  #########################*/	
+@media only screen and (min-width: 1300px){
+/*##################################################################################*/	
+
+
+#wrapper {
+	width: 80%;
+	}
+
+}
